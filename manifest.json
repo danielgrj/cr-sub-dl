@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "cr-sub-dl",
+  "description": "description",
+  "version": "0.0.1",
+  "icons": {
+    "64": "icons/icon.png"
+  },
+  "permissions": [
+    "webRequest",
+    "storage",
+    "downloads",
+    "*://*.crunchyroll.com/*",
+    "*://*.vrv.co/*"
+  ],
+  "background": {
+    "scripts": [
+      "background_script.js"
+    ]
+  },
+  "page_action": {
+    "browser_style": true,
+    "default_icon": {
+      "64": "icons/icon.png"
+    },
+    "default_title": "Download Episode SRT file"
+  }
+}
